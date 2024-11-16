@@ -54,6 +54,16 @@ with st.container():
         image = Image.open("images/Logo1.png")
         st.image(image, use_container_width=True)
 
+with st.container():
+    st.write("---")
+    st.header("Objetivo")
+    st.write("""
+            Estimar la cantidad de consultas médicas que se esperarán en el futuro basándose en datos históricos, así permitir a la gerencia planificar recursos de acuerdo con la demanda futura de sus servicios.
+           """)
+    st.header("Idea de negocio")
+    st.write("""
+             Se espera entregar cifras significativas para la planificación de recursos optimizados, Reducción de tiempos de espera y mayor eficiencia operativa.           
+             """)
 # Modelos P
 
 with st.container():
@@ -71,7 +81,8 @@ with st.container():
             """
         )
         st.write("RMSE: 115.26346053021237")
-
+        st.write("las predicciones del modelo tienen un error de aproximadamente 115 unidades en la cantidad de consultas, total de citas analizadas del dataset:82059")
+        st.write("Porcentaje de exactitud=98,60%")
 with st.container():
     st.write("---")
     st.write("##")
@@ -86,7 +97,8 @@ with st.container():
             """
         )
         st.write("RMSE = 186.9286939382612")
-
+        st.write("las predicciones del modelo tienen un error de aproximadamente 186 unidades en la cantidad de consultas, total de citas analizadas del dataset:43125")
+        st.write("Porcentaje de exactitud=99,57%")
 
 with st.container():
     st.write("---")
@@ -102,7 +114,8 @@ with st.container():
             """
         )
         st.write("RMSE: 52.73818844312213")
-
+        st.write("las predicciones del modelo tienen un error de aproximadamente 53 unidades en la cantidad de consultas, total de citas analizadas del dataset:25715")
+        st.write("Porcentaje de exactitud=99,77%")
 #Contactenos
 with st.container():
     st.write("---")
